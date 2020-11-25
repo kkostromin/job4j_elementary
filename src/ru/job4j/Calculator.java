@@ -15,5 +15,12 @@ public class Calculator {
         System.out.println(sixDivTwo);
         System.out.println(fiveMinusTwo);
         System.out.println(fourTimeTwo);
+
+        //char c = 4500000000;
+        // float i = c;
+        short s = 1500;
+        char c = (char) s;
+        double d = c;
+        System.out.println(d);
     }
 }
