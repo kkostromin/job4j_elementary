@@ -7,7 +7,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class ConverterTest {
-
+    //тест для конвертера евро в рубли
     @Test
     public void whenConvert140RblThen2Euro() {
         int in = 140;
@@ -16,6 +16,7 @@ public class ConverterTest {
         Assert.assertEquals(expected, out);
     }
 
+    //тест для конвертера доллары в рубли
     @Test
     public void whenConvert180RblThen3Dollar() {
         int in = 180;
