@@ -14,8 +14,11 @@ public class Game {
     }
 
     public static void main(String[] args) {
+        // game 1
         Game.menu("tanks");
+        // game 2
         Game.menu("super mario");
+        // game 3
         Game.menu("tetris");
     }
 }
