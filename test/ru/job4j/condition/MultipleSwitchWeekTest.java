@@ -18,4 +18,10 @@ public class MultipleSwitchWeekTest {
         int rsl = MultipleSwitchWeek.numberOfDay("Saturday");
         assertThat(rsl, is(6));
     }
+
+    @Test
+    public void numberOfDay6Rus() {
+        int rsl = MultipleSwitchWeek.numberOfDay("Суббота");
+        assertThat(rsl, is(6));
+    }
 }
