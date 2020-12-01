@@ -28,9 +28,6 @@ public class ThreeMax {
         if (second >= first && second >= third) {
             result = second;
         }
-        if (first >= third && first >= second) {
-            result = first;
-        }
         return result;
     }
 }
