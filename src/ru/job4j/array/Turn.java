@@ -5,15 +5,8 @@ public class Turn {
         int temp = array[0];
         array[0] = array[array.length - 1];
         array[array.length - 1] = temp;
-        boolean lenMas = (array.length) % 2 == 0; //проверка на четность длины массива
-        if (lenMas) {
-            for (int i = 1; i < array.length - i - 1; i++) {
-                temp = array[i];
-                array[i] = array[array.length - 1 - i];
-                array[array.length - 1 - i] = temp;
-            }
-        } else {
-            for (int i = 1; i < array.length - i - 1; i++) {
+        for (int i = 1; i < array.length - i - 1; i++) {
+            if (i < array.length / 2) {
                 temp = array[i];
                 array[i] = array[array.length - 1 - i];
                 array[array.length - 1 - i] = temp;
