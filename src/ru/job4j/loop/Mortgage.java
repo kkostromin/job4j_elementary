@@ -6,7 +6,7 @@ public class Mortgage {
         /*if (amount / salary < 2) {
             System.out.print("Кредит не обеспечен");
         }*/
-        while (amount > 0 && (amount / salary < 2)) {
+        while (amount > 0) {
             amount = (int) (amount + amount * percent / 100 - salary);
             year++;
         }
