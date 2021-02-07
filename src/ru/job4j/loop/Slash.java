@@ -1,11 +1,16 @@
 package ru.job4j.loop;
 
 public class Slash {
+    /**
+     * @param size - размер матрицы
+     *             добавить условие, по которому нужно определить ставить ли символ или нет.
+     *             добавить условие, что нужно ставить элемент в правый угол.
+     */
     public static void draw(int size) {
         for (int row = 0; row < size; row++) {
             for (int cell = 0; cell < size; cell++) {
-                boolean left = row == cell; /* добавить условие, по которому нужно определить ставить ли символ или нет. */
-                boolean right = (row + cell + 1) == size; /* добавить условие, что нужно ставить элемент в правый угол. */
+                boolean left = row == cell;
+                boolean right = (row + cell + 1) == size;
                 if (left) {
                     System.out.print("0");
                 } else if (right) {

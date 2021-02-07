@@ -3,7 +3,6 @@ package ru.job4j.condition;
 public class DummyBot {
 
     public static String answer(String question) {
-        //String rsl1 = "Это ставит меня в тупик. Задайте другой вопрос.";
         String rsl2 = "Привет, умник.";
         String rsl3 = "До скорой встречи.";
         String rsl = "Это ставит меня в тупик. Задайте другой вопрос.";
@@ -11,8 +10,6 @@ public class DummyBot {
             rsl = rsl2;
         } else if (question.equals("Пока.")) {
             rsl = rsl3;
-            //} else {
-            //    rsl = rsl1;
         }
         return rsl;
     }

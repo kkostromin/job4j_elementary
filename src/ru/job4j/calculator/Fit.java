@@ -1,23 +1,45 @@
 package ru.job4j.calculator;
 
-/*
-Идеальный вес для мужчин = (рост в сантиметрах – 100) · 1,15.
-Идеальный вес для женщин = (рост в сантиметрах – 110) · 1,15.
-Результат вычисления метода записывается в переменную double man.
-Дальше эту переменную мы выводим на консоль.
+/**
+ * Class Fit with method <b>manWeight</b> и <b>womanWeight</b>.
+ *
+ * @author Konstantin Kostromin
+ * @version 1.1
  */
-
+@SuppressWarnings("checkstyle:EmptyLineSeparator")
 public class Fit {
+
+    /**
+     * Function calculate the ideal weight of man
+     *
+     * @param height - height of man
+     * @return return ideal weight of man = (height in centimeters – 100) · 1,15.
+     */
 
     public static double manWeight(short height) {
         double rsl = (height - 100) * 1.15;
         return rsl;
     }
 
+    /**
+     * Function calculate the ideal weight of woman
+     *
+     * @param height - height of woman
+     * @return return ideal weight of woman = (height in centimeters – 110) · 1,15.
+     */
+
     public static double womanWeight(short height) {
         double rsl = (height - 110) * 1.15;
         return rsl;
     }
+
+    /**
+     * Enter value and out calculate value on console
+     *
+     * @param args
+     * @see Fit#manWeight(short)
+     * @see Fit#womanWeight(short)
+     */
 
     public static void main(String[] args) {
         short height = 180;

@@ -1,13 +1,22 @@
 package ru.job4j.condition;
-/*
-1. Вычесть аргументы x2 и x1.
-2. Вычесть аргументы y2 и y1.
-3. Возвести в степень 2 результат операции 1.
-4. Возвести в степень 2 результат операции 2.
-5. Сложить результаты операций 3 и 4.
-6. Вычислить корень квадратный из результата операции 5.
+
+/**
+ * 1. Вычесть аргументы x2 и x1.
+ * 2. Вычесть аргументы y2 и y1.
+ * 3. Возвести в степень 2 результат операции 1.
+ * 4. Возвести в степень 2 результат операции 2.
+ * 5. Сложить результаты операций 3 и 4.
+ * 6. Вычислить корень квадратный из результата операции 5.
  */
+
 public class Point {
+    /**
+     * @param x1 - first coordinate point 1
+     * @param y1 - first coordinate point 2
+     * @param x2 - second coordinate point 1
+     * @param y2 - second coordinate point 2
+     * @return distance between two points
+     */
     public static double distance(int x1, int y1, int x2, int y2) {
         double rsl = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
         return rsl;
